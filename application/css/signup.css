@@ -1,0 +1,108 @@
+body {
+
+    background: grey;
+}
+form label {
+    margin-left: 5%;
+    margin-right: auto;
+}
+p {
+    font-family: verdana;
+}
+h2 {
+    font-family: verdana;
+    padding-top: 7px ;
+}
+
+.errors {
+    color: darkred;
+
+    width: 100%
+}
+.forms {
+
+    background : grey;
+    width: 400px;
+    display: block;
+    height :auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+
+    border: 3px solid #333333;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-family: aerial black, aerial;
+}
+.forms-header {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font: aerial;
+    color: #000000;
+    background : steelblue;
+    margin-top: -21px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 3px;
+}
+label {
+    float: left;
+    display: block;
+}
+input[type=text],input[type=password]{
+
+    display : block;
+    margin: 0 auto auto auto;
+    width: 180px;
+    border: 3px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 3px;
+    padding :10px;
+
+}
+input[type=submit],form a{
+    border: none;
+
+    margin-left: 165px;
+    padding :10px;
+    margin-right: -130px;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 3px;
+    background: steelblue;
+    color: white;
+    margin-top: -5px;
+
+
+}
+
+input[type=submit]:hover, form a:hover{
+
+    background: #287368;
+    cursor: pointer;
+}
+table {
+    padding: 10px;
+}
+.signup {
+    padding: 20px;
+}
+td{
+    width: 250px;
+}
+.signup-form {
+
+    background : grey;
+    width: 500px;
+    display: block;
+    height :auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+
+    border: 3px solid #333333;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-family: aerial black, aerial;
+}

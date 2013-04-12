@@ -1,0 +1,134 @@
+.deletePost{
+
+
+    padding :10px;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: steelblue;
+    color: white;
+    margin-right: 10px;
+    border: solid 1px;
+
+}
+.editPost{
+
+
+    padding :10px;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: steelblue;
+    color: white;
+    margin-right: -110px;
+    border: solid 1px;
+}
+.posts {
+    border: solid dodgerblue;
+    padding: 15px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+
+}
+
+.post-contents{
+    width: 450px;
+    margin-left: auto;
+}
+
+.square{
+    height: 80px;
+    width: 80px;
+    background: url('http://localhost/authentication/application/img/<?php echo $profile ?>')w;
+    background-color: white;
+    position: absolute;
+    margin-left: -110px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.triangle {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-left: -30px;
+    -webkit-transform: rotate(270deg);
+    color: dodgerblue;
+    -moz-transform: rotate(270deg);
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+
+
+}
+
+.profilePhoto{
+    width:80px;
+    height: 80px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.title{
+
+    background: steelblue;
+    padding: 5px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+
+
+}
+h2 {
+    font-family: verdana;
+
+}
+.contents{
+    background: #909496;
+    margin-top: 10px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 10px;
+
+}
+.create-post{
+    
+    
+    margin-top: -140px;
+    margin-right: 200px;
+    border: none;
+    float:right;
+
+    padding :10px;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 3px;
+    background: steelblue;
+    color: white;
+
+}
+.login-info{
+   
+    
+    margin-top: -140px;
+    margin-left: 200px;
+    border: none;
+    float:left;
+    padding :10px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 3px;
+    background: steelblue;
+    color: white; 
+}
+.create-post:hover{
+    background: lightblue;
+    cursor: pointer;
+margin-top: -139px;
+}
+.create-post:focus{
+    margin-top: -139px;
+    
+}
