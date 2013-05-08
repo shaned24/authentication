@@ -12,7 +12,7 @@
 			</form>
 		</div>
 	</div>
-	<?php echo $r->first_name, " ",$r->last_name; ?>
+	
 </div>
 <div id="bottomLine"></div>
 </div><!-- end of container -->
@@ -52,22 +52,18 @@ $("document").ready(function(){
 	setInterval(function() {
       console.log("Getting messages");
       $.ajax({
-
 				url: 'http://localhost/authentication/index.php/profile/get_im/',
 				type: 'GET',			
 				dataType: 'html',
-				success : function(data){
-					
+				success : function(data){		
 					$('#conversation').append(data);
-					///console.log($('#conversation'));
 					var str = $('#conversation').text()
-					//console.log('first:' +str.length);
-					//console.log('second:' +data);
 					$("#conversation").scrollTop($("#conversation")[0].scrollHeight);
 				}
 			})
 
 	}, 5000);
+
 });
 
 function scroll_to_bottom(){

@@ -11,13 +11,7 @@ class Profile extends CI_Controller
 		$this->load->model('image_model');
 		$this->load->model('settings_model');
 		$this->load->model('im_model');
-		$dir = "C:\wamp\www\authentication\application\img";
-		foreach(scandir($dir) as $file)
-		{
- 			// ..print '<a href="'.$dir.$file.'">'.$file.'</a><br>';
-			$data['imgpath'] = $file;
-			$this->image_model->storeImages($data);
-		}
+		
 		if (!isset($_SESSION['username'])) {
 			redirect('admin');
 		}
@@ -53,6 +47,8 @@ class Profile extends CI_Controller
 	}
 	public function displayImage()
 	{   
+
+		
 		$dir = "C:\wamp\www\authentication\application\img";
 		foreach(scandir($dir) as $file)
 		{
@@ -95,7 +91,7 @@ class Profile extends CI_Controller
 
 		$config['upload_path'] = 'application/img/';
 		$config['allowed_types'] = 'gif|jpg|png';
-		$config['max_size']	= '100';
+		$config['max_size']	= '10000';
 		$config['max_width']  = '20000';
 		$config['max_height']  = '20000';
 
