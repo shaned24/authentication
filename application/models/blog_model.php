@@ -7,16 +7,16 @@ class Blog_Model extends CI_Model {
 
     function getAll ()
     {
-         $sql=     "SELECT id, title, contents, userIMG FROM users JOIN blog ON users.uid = blog.uid ORDER BY id desc";
+       $sql=  "SELECT blog.uid, blog.id, blog.title, blog.contents,users.first_name,users.last_name, users.userIMG FROM users JOIN blog ON users.uid = blog.uid ORDER BY id desc";
       //$sql = "SELECT id, title, contents,userIMG FROM blog ORDER BY id desc";
-                  $q = $this->db->query($sql);
-                  if($q->num_rows() > 0)
-                  {
-                      foreach($q->result() as $row)
-                      {
-                          $data[] = $row;
-                      }
-                      return $data;
+        $q = $this->db->query($sql);
+        if($q->num_rows() > 0)
+        {
+            foreach($q->result() as $row)
+            {
+                $data[] = $row;
+            }
+            return $data;
     }               
   }
 
@@ -32,10 +32,10 @@ class Blog_Model extends CI_Model {
             return;
     }
 
-    function update_record($data)
+    function update_record($data,$id)
     {
-        $this->db->where('id','1');
-        $this->db->update('data', $data);
+        $this->db->where('id',$id);
+        $this->db->update('blog', $data);
     }
 
     function delete_row()
@@ -138,9 +138,19 @@ class Blog_Model extends CI_Model {
                 return $data;
             }
         }
-        function getIMG(){
-            
+        function getLatestBlog($uid)
+        {
+            $sql = "SELECT blog.id, blog.title, blog.contents,users.first_name,users.last_name, users.userIMG FROM users JOIN blog ON users.uid = blog.uid WHERE blog.uid = ? AND blog.id = (SELECT max(blog.id) from blog) LIMIT 1"; 
 
+            $q = $this->db->query($sql, $uid);
+            if($q->num_rows() > 0)
+            {
+                foreach($q->result() as $row)
+                {
+                    $data[] = $row;
+                }
+                return $data;
+            }
         }
 
 

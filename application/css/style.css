@@ -1,17 +1,20 @@
-
+    
 html {
-    background-color: #777;
+    background-color: white;
+    /*#f8f8f8;*/
+    /*#c6bae1;*/
+    /*background: url('http://localhost/authentication/application/img/site header profile.png');*/
 }
 
-div#heading {
-
-    width: 100%;
-    height: 1px;
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -10px;
-    /*  background: url("../img/grunge.jpg");*/
+div#underheadingWrap{
+    padding: 10px;
+    background: url('http://localhost/authentication/application/img/fadedunderheading.png');
+    width: 98.7%;
+    float: left;
+    margin-left:-10px;
+    margin-top:-15px; 
+    height: 470px;
+    position: absolute;
 }
 
 div#leftheading {
@@ -30,31 +33,50 @@ div#fixedc {
     width: 100%;
     background: black;
     margin-left: -0.70%;
+    margin-top: -50p;
     margin-right: auto ;
-    background: url("../img/header.png");
+    background: url('http://localhost/authentication/application/img/postbg.jpg');
     height: 50px;
 
 }
 .login-button{
     float: right;
-    margin-top: -140px;
-    margin-right: 1%;
+    margin-top: -60px;
+    margin-right:5px ;
     border: none;
-
-
-    padding :10px;
+    padding :5px;
     text-decoration: none;
     font-size: 12px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 3px;
-    background: steelblue;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: #14192f;
     color: white;
 
 }
 .login-button:hover{
-   background: lightblue;
+    background: #3F4599;
     cursor: pointer;
-margin-top: -139px;]
+    margin-top: -59px;
+}
+#settingsButton{
+   float: right;
+   margin-top: -55px;
+   margin-right: 300px;
+   border: none;
+   padding :10px;
+   text-decoration: none;
+   font-size: 12px;
+   -moz-border-radius: 100px;
+   -webkit-border-radius: 3px;
+   background: #14192f;
+   color: white;
+
+}
+
+#settingsButton:hover{
+  background: #3F4599;
+  cursor: pointer;
+  margin-top: -54px;
 }
 div#backIMG
 {
@@ -67,20 +89,51 @@ div#container
 
 
 }
+#siteheading {
 
+    font-size: 30px;
+    font-weight: bold;
+    font-family: verdana;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -10px;
+    width: 200px;
+    height: 75px; 
+    background: url('http://localhost/authentication/application/img/snacks.png');
+}
 #underheading {
-    background: url("../img/containerbackground.png") ;
+
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
+    width: 1000px;
+    margin-left: 180px;   
+    margin-top: 50px;
     height: auto;
     text-align: center;
-    padding: 20px;
+    float: left;
+    
 }
+#sideheading {
 
+    width :360px;
+    height: 200px;
+    background: url('http://localhost/authentication/application/img/postbgdark.jpg');
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+    border-bottom-right-radius: 10px;
+    float: left;
+}
+#bottomLine{
+    border-top: 1px solid black;
+    height: 20px;
+    width: 90%;
+    position: ;
+    float: left;
+    margin-top: 30px;
+    margin-left: 5%
+    
+}
 
 #left{
     margin-left: 2%;
@@ -130,19 +183,19 @@ ul#nav li
     float: left; list-style: none;
 
 }
-ul#nav li a
+#header li a
 {
-    display: block; width: 97px; height: 25px;
+   /* display: block; width: 97px; height: 25px;
     padding: 72px 0 0 0; margin: -30% 32px 50px 32px;
-    font: bold 14px Verdana; text-transform: uppercase;
+    */font: bold 14px Verdana; text-transform: uppercase;
     color: #ddd; /*text-shadow: 2px 2px 2px #aaa;*/ text-decoration: none;
     background: url(../img/label.png) 0 -149px no-repeat ;
     padding-bottom: 48px;
 }
-ul#nav li a:hover {
-    background: url(../img/label.png) -149px 0 no-repeat;
+#header li a:hover {
+    
 
-    color: #aaa; text-shadow: 0 10px 14px #111;
+    color: #7990b7; text-shadow: 0 10px 14px #111;
 }
 ul#nav li a.js:hover {
     background: url(../img/label.png) 0 -149px no-repeat;
@@ -151,11 +204,621 @@ ul#nav li a.js:hover {
 .crop { width: 100%; height: 70%; overflow: hidden;
 }
 
+.images{
+
+    padding: 20px;
+    width: 150px;
+    height: 120px;
+    float : left;
+    background: lightblue;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 10px;
+    border: solid 1px;
+}
+.images img{
+    max-width :100%;
+    max-height :90%
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#postContainer{
+
+    width:600px;
+    background: url('http://localhost/authentication/application/img/postbg.jpg');
+    height: auto;
+    padding: 20px;
+    float: left;
+    border-bottom-left-radius: 10px;
+    box-shadow: 1 1 1 black;
+}
+.deletePost{
+
+
+    padding :10px;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: steelblue;
+    color: white;
+    margin-top: -5px;
+    margin-right: 10px;
+    border: solid 1px;
+
+}
+.editPost{
+
+
+    padding :10px;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: steelblue;
+    color: white;
+    margin-right: -110px;
+    border: solid 1px;
+}
+.postDelete {
+    height: 40px;
+    width: 100px;
+    float: right;
+    margin-top: 15px;
+}
+.postDelete img{
+    height: 35px;
+    width: 35px;
+
+}
+
+.posts {
+
+    padding: 15px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    width: 550px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.post-contents{
+    width: 450px;
+    margin-left: auto;
+    box-shadow: 10px 10px 5px black;
+}
+
+.square{
+    height: 70px;
+    width: 70px;
+    /*background: url('http://localhost/authentication/application/img/<?php echo $profile ?>');*/
+    background-color: none;
+    position: absolute;
+    margin-left: -110px;
+    margin-top: 10px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    background-position: center center;
+    /* border: outset 4px #3F6099;*/
+    overflow: hidden;
+    box-shadow: 10px 10px 5px black;
+}
+.square img{
+
+    background-position: center;
+    height: 100%;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.triangle {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-left: -32px;
+
+    margin-top: 30px;
+    -webkit-transform: rotate(270deg);
+    color: #3F6099;
+    -moz-transform: rotate(270deg);
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+
+
+}
+.tw{
+    margin-top:32px;
+    margin-left: -32px;
+}
+.author{
+    margin-left: -120px;
+    margin-top: -11px;
+    height: 10px;
+    width: 200px;
+    font-family: cursive;
+    font-size: 11px;
+    font-weight: bold;
+    
+}
+
+
+.title{
+    background: url('http://localhost/authentication/application/img/news-bg.jpg');
+    /* background: #3F6099;*/
+    padding: 15px;
+    color: white;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    text-align: center;
+
+
+}
+
+.title h2 {
+    font-family: verdana;
+    font-size: 25px;
+    margin-top: 20px;
+    width: 100%;
+
+    
+
+}
+.contents{
+    /*background: #7990b7;*/
+    background: url('http://localhost/authentication/application/img/containerbackground.png');
+    margin-top: 10px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 10px;
+
+}
+.create-post{
+
+  margin-top: -55px;
+  margin-right: 400px;
+  border: none;
+  float:right;
+  z-index: 8999;
+  padding :10px;
+  text-decoration: none;
+  font-size: 12px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 3px;
+  background: #14192f;
+  color: white;
+
+}
+
+.create-post:hover{
+    background: #3F4599;
+    cursor: pointer;
+    margin-top: -54px;
+}
+
+.login-info{
+
+
+    margin-top: -140px;
+    margin-left: 200px;
+    border: none;
+    float:left;
+    padding :10px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 3px;
+    background: #3F6099;
+    color: white; 
+}
+
+
+
+.create-contents{
+    box-shadow: 10px 10px 5px black;
+    width :450px;
+
+    margin: auto;   
+}
+textarea#textarea{
+
+    background: none;
+    height: 120px;
+    width: 300px;
+    border: dotted 1px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px; 
+    
+}
+label#createTitle{
+    margin-top: -10px;
+}
+input#inputTitle{
+
+    background: none;
+    margin-top: 15px;
+    text-align: center;
+    height: 40px;
+    width: 250px;
+    border: dotted 1px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#header{
+    height: 75px;
+    width :1000px;
+    border-top-left-radius: 10px;
+    border-radius-top-right-radius: 10px;
+    overflow: hidden;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    float:left;
+    background: url('http://localhost/authentication/application/img/site header.png');
+    z-index: 7000;
+    border-bottom: solid 1px black;
+
+}
+#navigatebar{
+    margin-left: 30px;
+    border-radius: 10px;
+    height: auto;
+    margin-top: 11px;
+    overflow: hidden;
+    width: 420px;
+}
+#profileheader{
+    background: url('http://localhost/authentication/application/img/site header profile.png');
+    z-index: 6000;
+    height: 40px;
+    float: right;
+    width: 300px;
+    margin-top : -55px;
+    border-top-right-radius: 10px;
+    border:solid 3px;
+
+    
+}
+#profileheader li{
+ margin-top: 10px;
+
+}
+#currentLoginWrap{
+    margin-top: 5px;
+}
+#currentLogin{
+    color : white;
+    font-weight: bold; 
+    font-size:20px;
+    
+    
+}
+#header{
+    height: 54px;
+}
+.header{
+    width :105px;
+    float :left;
+    
+    list-style: none;
+
+    
+}
+
+.header a{
+    text-align: center;
+    margin: auto;
+    color:white;
+    display: block; width: 97px; height: 25px;
+    padding: 72px 0 0 0; margin: -65px 20px 20px 0px;
+    font: bold 14px Verdana; text-transform: uppercase;
+    color: #ddd; /*text-shadow: 2px 2px 2px #aaa;*/ text-decoration: none;
+    
+    padding-bottom: 48px;
+    
+}
+
+
+.headercooked, .headeridle, .headerhover
+{ display: block; /*background: url('http://localhost/authentication/application/img/header.jpg') no-repeat;*/ }
+
+.headercooked { background-position: -0px -0px; width: 105px; height: 55px; }
+.headeridle { background-position: -0px -54px; width: 105px; height: 55px; }
+.headerhover { background-position: -0px -107.9px; width: 105px; height: 55px; }
+
+.sideheader, .sideheaderhover {
+
+    display: block; background: url('http://localhost/authentication/application/img/sideheader.png') no-repeat; 
+
+}
+.sideheader {background-position: 0px 0px; width: 180px; height: 67px; }
+.sideheaderhover{background-position: -0px -77px; width: 180px; height: 67px; }
+
+
+.crop { width: 200px; height: 150px; overflow: hidden; }
+.crop img { width: 400px; height: 300px; margin: -75px 0 0 -100px; }
+.settingsImg{
+
+ height: 100%;
+ width:auto;
+ -moz-border-radius: 7px;
+ -webkit-border-radius: 7px;
+
+
+
+}
+#AJAXsettings{
+
+
+}
+
+.settingsImgContainer{
+
+    margin-left: 0px;
+    margin-top: -35px;
+    height: 80px;
+    width: 80px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.settingsName{
+
+    margin-top: -115px;
+    margin-left: 150px;
+    font-size: 30px;
+    
+}
+.settingsName a{
+    color:white;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 25px;
+}
+.settingsName li{
+    color:white;
+}
+
+#settingsDropdown{
+    
+    height : 150px;
+    width: 355px;
+    position: absolute;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: url('http://localhost/authentication/application/img/news-bg.jpg');
+    margin-left:621px;
+    margin-top: -10px;
+    display: none;
+    border: solid 1px black;
+    outline: 1px solid transparent;
+}
+
+#settingsTable{
+    margin-left: 150px;
+    width: 150px;
+    height: 81px;
+    margin-top: -176px;
+}
+
+.buttons li{
+    margin-top: 20px;
+    list-style: none;
+}
+li {
+    list-style: none;
+}
+.changeProfilePhoto{
+    padding :10px;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #565968;
+    color: white;
+    
+    border: solid 1px;
+}
+.profilePhotoButtonPosition
+{
+    margin-top: 180px;
+}
+#closeSettings{
+    margin-top: ;
+    margin-right: 5px;
+    border: none;
+    float:right;
+    
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #F6099;
+    color: white;
+}
+.pageHeading{
+    margin-top: -5px;
+    padding-bottom: 15px;
+    text-align: left;
+    padding-top: 15px;
+    color: white;
+
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+#fadeDiv{
+    display: none;
+    background: url('http://localhost/authentication/application/img/fade.png');
+    z-index: 10000;  
+    position: fixed;
+    width: 100%;
+    height:100%;
+    padding: 20px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+#loadedContent{
+
+    background: white;
+    height: 0px;
+    width: 170px;
+    display: none;
+    overflow: hidden;
+    opacity: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+
+}
+
+#closeLoadedContent {
+   
+   float:right;
+   margin-top: 5px;
+   margin-right: 5px;
+   text-decoration: none;
+   font-size: 12px;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   background: #F6099;
+   color: black; 
+}
 
 
 
 
 
+/*
+#underheadingSettings{
+
+     background: url("../img/containerbackground.png") ;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    height: 350px;
+    text-align: center;
+    padding: 20px;
+
+    }*/
 
 
+#chooseOrUpload {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+.chooseorupload {
+    padding :10px;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #565968;
+    color: white;   
+    border: solid 1px;
+}
 
+.picLayout {
+
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    border: 1px solid grey;
+    padding: 10px;
+    float: left;
+    background-position: center;
+}
+
+
+.LayoutDivision{
+
+    padding: 10px;
+    float: left;
+}
+
+#chooseHeading {
+
+    box-shadow: 10px 10px 10px #888;
+    width: 700px;
+    height: 55px;
+    
+    background: url('http://localhost/authentication/application/img/chooseImage.png');
+    border: solid 1px black;
+    overflow:hidden;
+    margin-right: 1px;
+}
+
+#chooseHeadingP {
+
+  font-size: 25px;
+  margin-top: 5px; 
+ 
+  
+}
+
+#chooseContainer{
+    border:solid 1px;
+    float: left;
+}
+#uploadImage{
+    margin-top: 10px;
+}
+
+#create_post_ajax{
+    
+    
+    margin-left: 100px;
+    padding-bottom: 20px;
+}
+
+#chat_bar {
+
+    width: 100%;
+    position: fixed;
+    height: 30px;
+    background: grey;
+    border : solid;
+    bottom: 0;
+    margin-left: -10px;
+}
+
+.chat_box_closed {
+
+    float: right;
+    background: blue;
+    height: 25px;
+    width: 200px;
+    margin-right: 30px;
+
+}
+.chat_box_open {
+     float: right;
+    background: blue;
+    height: 250px;
+    width: 200px;
+    margin-right: 30px;
+    margin-top: -200px;
+}
+
+#conversation {
+
+    background: white;
+    border: solid 1px grey;
+    width: 190px;
+    height: 195px;
+    margin: auto;
+}
+.im {
+    border-bottom : dotted; 
+    width:150px; 
+    height: auto;"
+}

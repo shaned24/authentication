@@ -1,8 +1,9 @@
-<?php include('header.php'); ?>
 
-<h2 style="color:white; font-family:verdana;">Create New Post</h2>
+<div id="create_post_ajax" style="display:none;">
+
 
 <?php echo form_open('welcome/createPost'); ?>
+<form action="POST" 
 
 
 
@@ -17,22 +18,10 @@
     			<textarea id="textarea"  placeholder="Contents..."name="contents"></textarea>
 
                 </div>
-                <input type="submit" value="Submit"/>
+                <input type="submit" id="submit_post" value="Submit"/>
             </div>
 
         </div>
-    
-
-
-
-
-
-
-
-    
-</p>
 
 <?php echo form_close(); ?>
-
-
-<?php include('footer.php');?>
+</div>

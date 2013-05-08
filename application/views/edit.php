@@ -1,40 +1,27 @@
-<html>
-
-<title>
-    Are we nuts tonight
-</title>
-
-<head>
-
-</head>
-
-<body>
+<?php include('header.php'); ?>
 
 <h2>Edit Post</h2>
 
+
+
+
 <?php echo form_open('welcome/editPost/' . $a); ?>
-<p>
-    <?php
-    echo form_label('title:', 'title');
-    echo form_input('title', $b, 'id="title"');
-    ?>
-</p>
+ <div class="create-contents">
+                        
+            <div class="title">
+                <label for="title">Title: </label></br>
+                <input style="display:none;" type="text" value="<?php echo $a;?>" name="id" />
+                <input id='style' type="text" value="<?php echo $b;?>" name="title" />
 
-<p>
-    <?php
-    echo form_label('Contents:', 'contents');
-    echo form_input('contents', $c, 'id="contents"');
-    ?>
-</p>
+                <div class="contents">
+                
+                    <label for="title" >Contents: </label></br>
+    <!--<input type="text" name="contents" id="contents" /> -->
+                <textarea id="style" name="contents"><?php echo $c;?></textarea>
 
-<p>
-    <?php
-    echo form_submit('submit', 'Submit');
-    ?>
-    <?php echo form_close(); ?>
+                </div>
+                <input type="submit" value="Submit"/>
+            </div>
 
-
-</body>
-
-
-</html>
+        
+        <?php echo form_close(); ?>

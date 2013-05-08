@@ -1,0 +1,129 @@
+
+.crop { width: 200px; height: 150px; overflow: hidden; }
+.crop img { width: 400px; height: 300px; margin: -75px 0 0 -100px; }
+.settingsImg{
+
+   height: 100%;
+   width:auto;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    
+    
+
+}
+#AJAXsettings{
+
+
+}
+
+.settingsImgContainer{
+
+	margin-left: -38px;
+    margin-top: -35px;
+    height: 80px;
+    width: 200px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    overflow: hidden;
+	
+}
+
+.settingsName{
+	
+	margin-top: -115px;
+    margin-left: 150px;
+	font-size: 30px;
+    
+}
+.settingsName a{
+    color:white;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 25px;
+}
+.settingsName li{
+    color:white;
+}
+
+#settingsDropdown{
+    display:;
+    height : 150px;
+    width: 355px;
+    z-index: 8000;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 3px;
+    background: url('http://localhost/authentication/application/img/news-bg.jpg');
+    margin-left:641px;
+    margin-top: 9px;
+    position: fixed;               
+    overflow:hidden;
+    border: solid 1px black;
+    outline: 1px solid transparent;
+}
+
+#settingsTable{
+    margin-left: 150px;
+    width: 150px;
+    height: 81px;
+    margin-top: -176px;
+}
+
+.buttons li{
+	margin-top: 20px;
+	list-style: none;
+}
+li {
+    list-style: none;
+}
+.changeProfilePhoto{
+
+
+    padding :10px;
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #565968;
+    color: white;
+    
+    border: solid 1px;
+}
+.profilePhotoButtonPosition{
+	margin-top: 180px;
+}
+
+#closeSettings{
+    margin-top: ;
+    margin-right: 5px;
+    border: none;
+    float:right;
+    
+    text-decoration: none;
+    font-size: 12px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #F6099;
+    color: white;
+}
+.pageHeading{
+    margin-top: -5px;
+padding-bottom: 15px;
+text-align: left;
+padding-top: 15px;
+color: white;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+/*
+#underheadingSettings{
+
+     background: url("../img/containerbackground.png") ;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    height: 350px;
+    text-align: center;
+    padding: 20px;
+
+}*/

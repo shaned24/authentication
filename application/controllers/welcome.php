@@ -12,16 +12,23 @@ class Welcome extends CI_Controller
         if (!isset($_SESSION['username'])) {
             redirect('admin');
         }
+        $this->load->model('blog_model');
     }
 
     public function index()
     {
 
-        $this->load->model('blog_model');
+        
         $data['rows'] = $this->blog_model->getAll();
         $this->load->view('home_page', $data);
     }
 
+    public function refresh_home()
+    {
+        $data['rows'] = $this->blog_model->getLatestBlog($_SESSION['uid']);
+        $this->load->view('home_page_ajax', $data);
+    }
+    
     public function myBlog(){
       // if(isset($_SESSION['uid']))
               // {
@@ -33,7 +40,7 @@ class Welcome extends CI_Controller
 
     public function create()
     {
-        $this->load->view('create');
+        $this->load->view('create_ajax');
     }
 
     public function createPost()
@@ -44,7 +51,7 @@ class Welcome extends CI_Controller
             'uid' => $_SESSION['uid']
         );
         $this->blog_model->add_record($data);
-        redirect('/welcome/index');
+        //redirect('/welcome/index');
         //create
     }
 
@@ -66,15 +73,18 @@ class Welcome extends CI_Controller
     {
         //edit
        $id = $this->uri->segment(3);
-
+       echo $id;
+       //$id = $this->input>post('id');
         $data = array(
             'title' => $this->input->post('title'),
-            'contents' => $this->input->post('contents')
-        );
+            'contents' => $this->input->post('contents'),
 
-        $this->db->where('id', $id);
-        $this->db->update('blog', $data);
-        redirect('/welcome/myBlog');
+        );
+        $this->blog_model->update_record($data,$id);
+        
+        /*$this->db->where('id', $id);
+        $this->db->update('blog', $data);*/
+redirect('/welcome/myBlog');
     }
 
     public function deletePost()
@@ -83,6 +93,8 @@ class Welcome extends CI_Controller
         $this->blog_model->delete_row();
         redirect('/welcome/myBlog');
     }
+
+    
 
 
 }

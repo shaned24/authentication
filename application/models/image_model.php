@@ -26,9 +26,21 @@ class Image_model extends CI_Model
 
    function storeImages($data)
    {
-
+        
         $this->db->insert('images', $data);
         return;
+   }
+
+   function setUserImg($path,$uid)
+   {
+    //$q= "UPDATE users SET userIMG = " . $path . " WHERE uid = " . $uid;
+
+    $data = array(
+      'userIMG' => $path
+      );
+    $this->db->where('uid', $uid);
+    $this->db->update('users',$data);
+            return "done";
    }
    
 }

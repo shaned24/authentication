@@ -4,11 +4,12 @@ class Upload extends CI_Controller {
 
 	function __construct()
 	{
+		session_start();
 		parent::__construct();
 		$this->load->helper(array('form', 'url'));
 	}
 
-	function index()
+	function doit()
 	{
 		$this->load->view('upload_form', array('error' => ' ' ));
 	}
@@ -33,7 +34,9 @@ class Upload extends CI_Controller {
 		{
 			$data = array('upload_data' => $this->upload->data());
 
-			$this->load->view('upload_success', $data);
+			//$this->load->view('upload_success', $data);
+			$this->load->view('settings', $data);
+
 			
 			foreach ($data as $item => $value)	 
 			$path = $value['full_path'];

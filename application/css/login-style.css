@@ -1,6 +1,6 @@
 body {
 
-    background: #c3c3c3;
+    background: grey;
 }
 form label {
     margin-left: 5%;
@@ -21,15 +21,15 @@ h2 {
 }
 .forms {
 
-    background : #c3c3c3;
+    
     width: 400px;
     display: block;
     height :auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4%;
-
-    border: 3px solid #333333;
+    margin-top: px;
+    overflow: hidden;
+    
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     font-family: aerial black, aerial;
@@ -93,16 +93,5 @@ td{
 }
 .signup-form {
 
-    background : grey;
-    width: 500px;
-    display: block;
-    height :auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4%;
-
-    border: 3px solid #333333;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    font-family: aerial black, aerial;
+   
 }
