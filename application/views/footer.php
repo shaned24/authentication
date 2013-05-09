@@ -43,7 +43,7 @@ $("document").ready(function(){
 			
 			$.ajax({
 
-				url: 'http://localhost/authentication/index.php/profile/post_im/',
+				url: 'http://localhost/authentication/index.php/im/post_im/',
 				type: 'POST',			
 				dataType: 'html',
 				data : form_data,
@@ -58,7 +58,7 @@ $("document").ready(function(){
 	setInterval(function() {
       console.log("Getting messages");
       $.ajax({
-				url: 'http://localhost/authentication/index.php/profile/get_im/',
+				url: 'http://localhost/authentication/index.php/im/get_im/',
 				type: 'GET',			
 				dataType: 'html',
 				success : function(data){		
