@@ -5,7 +5,7 @@ A blogger for multiple users
 
 Usage:
 ==============================================
-Place the 'authentication' folder in your server root direction
+Place the 'authentication' folder in your server root directory
 
 Example access : 'http://localhost/authentication' 
       This should bring you to the home page where you can create an account
