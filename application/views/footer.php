@@ -4,18 +4,19 @@
 <div id="chat_bar">
 	<div id="chat_box_closed"  class="chat_box_closed"></div>
 	<div id="chat_box_open" style="display:none" class="chat_box_open">
-		<div id="conversation" style="overflow:scroll"></div>
+		<div class="chatHeader"></div>
+			<div id="conversation" style="overflow:scroll"></div>
 
-		<div id="conversation_input">
-			<form id="conversation_form">
-				<input id="conversation_message" type="text" placeholder="Write a message..." name="message"/>
-			</form>
+			<div id="conversation_input">
+				<form id="conversation_form">
+					<input id="conversation_message" type="text" placeholder="Write a message..." name="message"/>
+				</form>
+			</div>
+
+
 		</div>
-	</div>
-	
-</div>
-<div id="bottomLine"></div>
-</div><!-- end of container -->
+		<div id="bottomLine"></div>
+	</div><!-- end of container -->
 
 <script type="text/javascript">
 
@@ -25,6 +26,11 @@ $("document").ready(function(){
 	$("#chat_box_closed").on("click", function(){
 		$("#chat_box_closed").hide();
 		$("#chat_box_open").show();
+	})
+
+	$(".chatHeader").on("click", function(){
+		$("#chat_box_closed").show();
+		$("#chat_box_open").hide();
 	})
 
 	$("#conversation_form").on("submit" ,function(e){
